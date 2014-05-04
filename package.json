@@ -1,0 +1,25 @@
+{
+  "name": "named-routes-express",
+  "version": "0.0.1",
+  "description": "adds optional named route functionality to express",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/devoidfury/named-routes-express.git"
+  },
+  "author": "Tom Hunkapiller",
+  "license": "MIT",
+  "dependencies": {
+    "methods": "^0.1.0"
+  },
+  "keywords": [
+    "express",
+    "routes",
+    "resolve",
+    "named"
+  ],
+  "peerDependencies": {
+    "express": ">= 3.0.0 < 5"
+  }
+}
