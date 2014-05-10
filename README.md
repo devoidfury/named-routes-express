@@ -10,10 +10,26 @@ the URL scheme. Inspired by [express-named-routes](https://github.com/RGBboy/exp
 #### Install
 `npm install named-routes-express`
 
-#### Use
+#### Set up express and routes
 ```js
-//todo. hah.
+var express = require('express'),
+    named_routes = require('named-routes-express'),
+    routes = require('./your_routes');
+
+// Patch the new functionality into express.
+// Must be done before the app instace is created.
+named_routes.patch(express);
+
+var app = express();
+
+// the second argument (string) is the route key to resolve
+app.get('/', 'homepage', routes.homepage);
+
+// but it's optional, so it shouldn't break existing codebases
+app.get('/about-us', routes.about);
 ```
+
+####
 
 
 ### License - MIT
